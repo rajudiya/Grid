@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <virtualType name="Webkul\Grid\Model\ResourceModel\GridModel\GridModel\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">rohan_grid</argument>
+            <argument name="resourceModel" xsi:type="string">Webkul\Grid\Model\ResourceModel\GridModel</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="rohan_grid_list_data_source" xsi:type="string">Webkul\Grid\Model\ResourceModel\GridModel\GridModel\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

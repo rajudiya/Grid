@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="rohan_grid" resource="default" engine="innodb"
+           comment="Sample admin grid">
+        <column xsi:type="smallint" name="gd_id" padding="10" identity="true" unsigned="true" nullable="false" comment="Grid id"/>
+        <column xsi:type="varchar" name="title" nullable="false" length="255" comment="Title"/>
+        <column xsi:type="smallint" name="ad_status" unsigned="true" nullable="false" default="0" comment="Advertisment Status"/>
+        <column xsi:type="datetime" name="created_at" comment="Advertisment Created"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="gd_id"/>
+        </constraint>
+    </table>
+</schema>
