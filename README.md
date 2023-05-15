@@ -5,12 +5,12 @@ URL: `http://mage244.com/admin/grid/grid/index/`
 
 ## Composer install
 
-- `composer config repositories.reponame vcs https://github.com/username/reponame`
-- `composer require vendername/observername`
+- `composer config repositories.reponame vcs https://github.com/rajudiya/Grid`
+- `composer require webkul/grid`
 
 ## Composer uninstall
 
-- `composer remove vendername/observername:branch name`
+- `composer remove webkul/grid:branch name`
 
 ## Preview will be added
 
